@@ -1,7 +1,7 @@
-  <?php
+<?php
 $dsn = 'mysql:host=localhost;dbname=restaurant_db';
-$username = 'root';
-$password = '';
+$username = 'admin';
+$password = 'pass@word';
 
 try {
     $db = new PDO($dsn, $username, $password);

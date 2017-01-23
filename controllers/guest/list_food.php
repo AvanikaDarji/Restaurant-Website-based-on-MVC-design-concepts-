@@ -7,5 +7,5 @@ if (isset($_GET['category_id'])) {
 $categories = CategoryRepository::getCategories();
 $category= CategoryRepository::getCategory($category_id);
 $food = FoodRepository::getFoodByCategory($category_id);
-return 'views/manage_food_list_view.php';
+return 'views/food_list_view.php';
 

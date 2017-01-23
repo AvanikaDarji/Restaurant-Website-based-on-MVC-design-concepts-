@@ -6,9 +6,9 @@ class CategoryRepository {
         global $db;
         $query = "SELECT * FROM categories ORDER BY categoryID";
         $result = $db->query($query);
-        $categories= array();
+        $categories = array();
         foreach ($result as $row) {
-            $category= new Category($row['categoryID'], $row['categoryName']);
+            $category = new Category($row['categoryID'], $row['categoryName']);
             $categories[] = $category;
         }
         return $categories;

@@ -1,8 +1,8 @@
 <?php
 class DBContext {
     private static $dsn = 'mysql:host=localhost;dbname=restaurant_db';
-    private static $username = 'root';
-    private static $password = '';
+    private static $username = 'admin';
+    private static $password = 'pass@word';
     private static $db;
 
     private function __construct() {}
@@ -23,4 +23,3 @@ class DBContext {
     }
 }
 ?>
-

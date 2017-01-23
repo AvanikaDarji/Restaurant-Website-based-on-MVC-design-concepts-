@@ -1,13 +1,12 @@
 <?php
 
-class food {
-    private $id, $category, $name, $price;
+class Food {
+    private $id, $name, $price, $category;
     
-    public function __construct($id, $category, $name, $price) {
-        $this->id = $id;
-        $this->category = $category;
+    public function __construct($name, $price, $category) {
         $this->name = $name;
         $this->price = $price;
+        $this->category = $category;
     }
     
     public function setID($id) {
@@ -16,13 +15,7 @@ class food {
     public function getID() {
         return $this->id;
     }
-    public function setCategory($category) {
-        $this->category = $category;
-    }
-    public function getCategory() {
-        return $this->category;
-    }
-    public function setName($name) {
+     public function setName($name) {
         $this->name = $name;
     }
     public function getName() {
@@ -33,6 +26,13 @@ class food {
     }
     public function getPrice() {
         return $this->price;
+    }
+    public function getCategory() {
+        return $this->category;
+    }
+
+    public function setCategory($category) {
+        $this->category = $category;
     }
     public function getFormattedPrice() {
         $formatted_price = number_format($this->price, 2);
@@ -55,7 +55,7 @@ class food {
         return $discount_price;
     }
     public function getImageFilename() {
-        $image_filename = $this->isbn.'.png';
+        $image_filename = $this->name.'.png';
         return $image_filename;
     }
     public function getImagePath() {

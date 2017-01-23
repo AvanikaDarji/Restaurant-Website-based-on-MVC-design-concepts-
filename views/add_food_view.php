@@ -11,7 +11,7 @@ if ($hasCategories === false) {
     <form action="?controller=admin&action=add_food" method="post">
         <input type="hidden" name="action" value="add_food" />
 
-        <label>Categories:</label>
+        <label>Category:</label>
         <select name="category_id">
             <?php foreach ($categories as $category) : ?>
                 <option value="<?php echo $category->getID(); ?>">
@@ -20,14 +20,11 @@ if ($hasCategories === false) {
             <?php endforeach; ?>
         </select>
         <br />
-        <label>ID:</label>
-        <input type=text" name="isbn" /> 
-        <br />
-        <label>Name:</label>
-        <input type=text" name="book_title" /> 
+        <label>Food Name:</label>
+        <input type=text" name="food_name" /> 
         <br />
         <label>Price:</label>
-        <input type=text" name="book_price" /> 
+        <input type=text" name="food_price" /> 
         <br />
         <label>&nbsp;</label>
         <input type="submit" value="Add Food" name="addfood_submitted" /> 

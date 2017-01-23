@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<!--
+/*  
+ * Student Info: Name=Avanika M Darji, ID=16387
+ * Subject: CS526(B)_HW5_Spring_2016
+ * Author: AvanikaDarji
+ * Filename: page.php 
+ * Date and Time: Mar 20, 2016 10:15:11 AM
+ * Project Name: Avanika_16387_CS526B_HW5
+ */
+-->
 <html>
     <head>
         <title><?php echo $pageData->title; ?></title>
